@@ -1,0 +1,96 @@
+﻿<Page
+    x:Class="Vivace.EditScore"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Vivace"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="column1" Width="1*" />
+            <ColumnDefinition x:Name="mainSection" Width="8*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition x:Name="row1"  Height="0.5*" />
+            <RowDefinition Height="9*" />
+            <RowDefinition Height="0.5*" />
+        </Grid.RowDefinitions>
+        <Grid Background="White" Grid.Row="1" Grid.Column="1" Margin="0,10,0,28" Grid.RowSpan="2">
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="6*" />
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*" />
+                    <RowDefinition Height="8*" />
+                </Grid.RowDefinitions>
+                <Viewbox Margin="30" Grid.Column="1" Grid.Row="0"  VerticalAlignment="Stretch" Height="auto" HorizontalAlignment="Center" >
+                    <TextBlock Name="TitleBlock" Foreground="Black" MinWidth="20" MinHeight="20" FontFamily="Verdana" TextWrapping="Wrap" Text=""/>
+                </Viewbox>
+                <Grid Grid.Row="0" Grid.Column="0">
+                    <Grid.RowDefinitions>
+
+                    </Grid.RowDefinitions>
+                    <TextBox FontFamily="Verdana" Name="LeftTextBox" TextWrapping="Wrap" Foreground="Black" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="0" MinWidth="20" MinHeight="20" Text="" IsReadOnly="True" />
+                </Grid>
+                <Grid Grid.Row="0" Grid.Column="2">
+                    <TextBox FontFamily="Verdana" Margin="10,0,0,0" Name="RightTextBox" Foreground="Black" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Bottom"  MinWidth="5" TextWrapping="Wrap" MinHeight="20" Text="" IsReadOnly="True" />
+                </Grid>
+
+
+                <Grid Grid.Row="1" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+
+                    <TextBlock Opacity=".5" Grid.Row="1" TextTrimming="None"  VerticalAlignment="Stretch" HorizontalAlignment="Center" Width="640" Name="scoreBox" IsTapEnabled="True" Foreground="Black" ></TextBlock>
+                    <Grid  Grid.Row="1">
+                            
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10"/>
+                            <RowDefinition  Height="10"/>
+                            <RowDefinition Height="10"/>
+                            <RowDefinition Height="10"/>
+                            <RowDefinition Height="10"/>
+                            </Grid.RowDefinitions>
+                         
+                        <TextBlock x:ConnectionId='1' Opacity="1" TextTrimming="None" VerticalAlignment="Stretch" HorizontalAlignment="Center"   Text="" Width="640"  FontSize="25" FontFamily="Symbola" Grid.Row="0"   Name="FifthLineBox" IsTapEnabled="True" Foreground="Black"                                                                              />
+                        <TextBlock x:ConnectionId='2' TextTrimming="None" VerticalAlignment="Stretch" HorizontalAlignment="Center"   Text=""    Width="640"  FontSize="25" FontFamily="Symbola" Grid.Row="1"  Name="FourthLineBox" IsTapEnabled="True" Foreground="Black"                               />
+                        <TextBlock x:ConnectionId='3' TextTrimming="None" VerticalAlignment="Stretch" HorizontalAlignment="Center"   Text=""    Width="640" FontSize="25"  FontFamily="Symbola" Grid.Row="2"   Name="ThirdLineBox" IsTapEnabled="True" Foreground="Black"                              />
+                        <TextBlock x:ConnectionId='4' TextTrimming="None" VerticalAlignment="Stretch" HorizontalAlignment="Center"  Text=""    Width="640" FontSize="25"  FontFamily="Symbola" Grid.Row="3"   Name="SecondLineBox" IsTapEnabled="True" Foreground="Black"                               />
+                        <TextBlock x:ConnectionId='5' TextTrimming="None" VerticalAlignment="Stretch" HorizontalAlignment="Center"  Text=""    Width="640" FontSize="25"  FontFamily="Symbola" Grid.Row="4"  Name="FirstLineBox" IsTapEnabled="True" Foreground="Black"                              />
+                       
+                    </Grid>
+                </Grid>
+            </Grid>
+
+        </Grid>
+
+        <ListBox  FontSize="100" FontFamily="Symbola" Grid.Row="1" Grid.Column="2" Name="NoteListBox"  Visibility="Collapsed"/>
+    </Grid>
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarToggleButton x:ConnectionId='6' Icon="MusicInfo" Label="Add Notes"                            />
+            <AppBarToggleButton Icon="MusicInfo" Label="Play Music" />
+            <AppBarSeparator/>
+            <AppBarButton Icon="MusicInfo" Label="Edit Measures" />
+            <AppBarButton Icon="MusicInfo" Label="Change View" />
+            <AppBarButton Icon="MusicInfo" Label="Add Instrument" />
+            <AppBarButton Icon="MusicInfo" Label="Save" />
+
+           
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>
+

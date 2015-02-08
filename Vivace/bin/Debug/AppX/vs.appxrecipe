@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DB_W8</Machine>
+    <WindowsUser>db8</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>79cf7d58-a812-4387-93b5-f2c9c4732b2c</PackageIdentityName>
+    <RegisteredManifestChecksum>0643A5B62B62D02161317A5F393F05B7780F49C4858445115DF467B054041E5D</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>79cf7d58-a812-4387-93b5-f2c9c4732b2c_1.0.0.0_neutral__twdrxseeygaem</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>79cf7d58-a812-4387-93b5-f2c9c4732b2c_twdrxseeygaem!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>79cf7d58-a812-4387-93b5-f2c9c4732b2c</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Cameron</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\db8\Documents\vivace\Vivace\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-12-05T17:42:54.534</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\db8\Documents\vivace\Vivace\bin\Debug\Vivace.exe">
+      <PackagePath>Vivace.exe</PackagePath>
+      <Modified>2014-12-05T17:42:54.507</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\db8\Documents\vivace\Vivace\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-11-08T02:53:55.637</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\db8\Documents\vivace\Vivace\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-11-08T02:53:55.637</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\db8\Documents\vivace\Vivace\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-11-08T02:53:55.638</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\db8\Documents\vivace\Vivace\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-11-08T02:53:55.638</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\db8\Documents\vivace\Vivace\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2014-12-05T16:49:33.480</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\db8\Documents\vivace\Vivace\bin\Debug\EditScore.xbf">
+      <PackagePath>EditScore.xbf</PackagePath>
+      <Modified>2014-12-05T17:42:54.363</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\db8\Documents\vivace\Vivace\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2014-12-05T16:49:33.482</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\db8\Documents\vivace\Vivace\bin\Debug\NewScoreScreen.xbf">
+      <PackagePath>NewScoreScreen.xbf</PackagePath>
+      <Modified>2014-12-05T16:49:33.484</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\db8\Documents\vivace\Vivace\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-12-05T16:49:33.715</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

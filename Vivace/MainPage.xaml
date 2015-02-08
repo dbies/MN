@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="Vivace.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Vivace"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid x:Name="OGrid" Margin="0,10,0,-10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="7*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="1*" />
+                    <ColumnDefinition Width="8*" />
+                    <ColumnDefinition Width="1*" />
+                 </Grid.ColumnDefinitions>
+                <Viewbox Grid.Column="1" Grid.Row="0" Margin="20" VerticalAlignment="Stretch" Height="auto" >
+                    <TextBlock FontFamily="Verdana" Width="auto" TextWrapping="Wrap" Text="Vivace"/>
+                </Viewbox>
+            </Grid>
+            <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <HyperlinkButton HorizontalAlignment="Center" Margin="10" Click="CreateNewScore_Click">Create Score</HyperlinkButton>
+                <HyperlinkButton HorizontalAlignment="Center" Margin="10" Click="OpenScore_Click">Edit Score</HyperlinkButton>
+            </StackPanel>
+            
+
+        </Grid>
+    </Grid>
+</Page>
